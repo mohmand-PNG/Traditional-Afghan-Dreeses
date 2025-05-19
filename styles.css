@@ -461,7 +461,7 @@ body {
 }
 
 .faq-image-placeholder {
-  background-image: url("images/2.jfif");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/148/original/2.jfif?1747639032");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -643,7 +643,7 @@ body {
 
   height: 290px;
 
-  background-image: url("images/6.jfif");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/147/original/6.jfif?1747639000");
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
