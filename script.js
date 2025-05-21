@@ -81,3 +81,29 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", revealElements);
   revealElements(); // Trigger on load if elements are already visible
 });
+
+// swiperJS code
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  autoplay: {
+    delay: 3000, // Slides will change every 3 seconds
+    disableOnInteraction: false, // Keeps autoplay running even after user interaction
+  },
+  speed: 1000, // Smooth transition speed (1 second)
+  // loop: true, // Enables infinite scrolling
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // Allows pagination dots to be clickable
+  },
+});

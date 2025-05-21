@@ -531,14 +531,57 @@ body {
   margin-left: 10px;
 }
 /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
-/* .section-five {
-  background-image: url("images/15.png");
-  background-size: cover;
+
+/* fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff */
+
+.popular-dress {
+  background-color: #f7e9d7;
+  background-blend-mode: multiply;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  padding: 4em;
+  height: 100%;
+  overflow: visible !important;
+}
+.popular-dress h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(236, 134, 149);
+}
+.swiper {
+  width: 300px;
+  /* max-width: 1200px; */
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: visible !important; /* makes sure 3D slides aren't clipped */
+}
+.swiper-slide {
+  width: 300px; /* fixed width needed for coverflow with slidesPerView: "auto" */
+  height: 300px;
+  flex-shrink: 0;
   background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-} */
+  background-size: cover;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  box-shadow: 0 4px 8px rgba(150, 142, 142, 0.3);
+  overflow: visible !important;
+}
+.swiper-slide img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.swiper-wrapper {
+  /* width: 150px; fixed square size */
+  overflow: visible !important;
+}
 
 /* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
 /* Reset */
@@ -697,7 +740,7 @@ body {
   }
 
   .text-content h1 {
-    font-size: 42px;
+    font-size: 74px;
   }
 
   .subheading {
@@ -1294,7 +1337,93 @@ body {
   }
 }
 /* animations */
+/* ------------------- */
+/* Tablets (768px - 1024px) */
+/* ------------------- */ /* ------------------- */
+/* Tablets (768px - 1024px) */
+/* ------------------- */
+@media (max-width: 1024px) {
+  .swiper {
+    max-width: 90%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 280px; /* ✅ Fixed height */
+  }
 
+  .swiper-slide {
+    width: 250px;
+    height: 100%; /* ✅ Inherit from .swiper */
+  }
+
+  .swiper-slide img {
+    height: 100%; /* ✅ Fill slide */
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .popular-tour h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ------------------- */
+/* Phones (Below 768px) */
+/* ------------------- */
+@media (max-width: 767px) {
+  .swiper {
+    max-width: 95%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 240px; /* ✅ Fixed height */
+  }
+
+  .swiper-slide {
+    width: 200px;
+    height: 100%; /* ✅ Inherit from .swiper */
+  }
+
+  .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .popular-tour h1 {
+    font-size: 1.4rem;
+    padding-bottom: 0.8em;
+  }
+}
+
+/* ------------------- */
+/* Extra Small Phones (Below 480px) */
+/* ------------------- */
+@media (max-width: 480px) {
+  .swiper {
+    height: 220px; /* ✅ Even smaller height */
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 180px;
+    height: 100%; /* ✅ Match swiper height */
+  }
+
+  .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+}
 h1,
 h2,
 h3,
